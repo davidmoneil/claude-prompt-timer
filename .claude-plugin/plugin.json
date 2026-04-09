@@ -1,0 +1,7 @@
+{
+  "name": "prompt-timer",
+  "description": "Injects current time and elapsed-time awareness into every prompt so Claude knows temporal context",
+  "version": "1.0.0",
+  "author": { "name": "David O'Neil" },
+  "hooks": "./hooks/hooks.json"
+}
