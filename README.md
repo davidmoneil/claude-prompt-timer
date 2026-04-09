@@ -42,9 +42,26 @@ New sessions (different `session_id`) always show "First prompt of session" rega
 
 ## Installation
 
-### Option 1: Add the hook to your project settings
+### Option 1: Plugin marketplace (recommended)
 
-Copy `scripts/prompt-timer.js` somewhere in your project, then add to `.claude/settings.json`:
+```bash
+# Add the marketplace source
+/plugin marketplace add davidmoneil/claude-prompt-timer
+
+# Install the plugin
+/plugin install prompt-timer@davidmoneil-claude-prompt-timer
+```
+
+### Option 2: Plugin directory (local/development)
+
+```bash
+git clone https://github.com/davidmoneil/claude-prompt-timer.git
+claude --plugin-dir ./claude-prompt-timer/
+```
+
+### Option 3: Manual hook (settings.json)
+
+Copy `scripts/prompt-timer.js` somewhere accessible, then add to your `.claude/settings.json` (project-level or `~/.claude/settings.json` for all projects):
 
 ```json
 {
@@ -61,16 +78,6 @@ Copy `scripts/prompt-timer.js` somewhere in your project, then add to `.claude/s
     ]
   }
 }
-```
-
-### Option 2: Add to user-level settings
-
-Same as above, but add to `~/.claude/settings.json` to enable across all projects.
-
-### Option 3: Plugin directory
-
-```bash
-claude --plugin-dir /path/to/claude-prompt-timer/
 ```
 
 ## How it works
