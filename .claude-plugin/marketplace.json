@@ -1,10 +1,11 @@
 {
-  "owner": "David O'Neil",
-  "marketplace_name": "claude-prompt-timer",
+  "name": "claude-prompt-timer",
+  "description": "Claude Code hook that gives Claude temporal awareness",
+  "owner": { "name": "David O'Neil" },
   "plugins": [
     {
       "name": "prompt-timer",
-      "source": ".",
+      "source": "./",
       "description": "Gives Claude temporal awareness — current time, elapsed time, session detection"
     }
   ]
