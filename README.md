@@ -49,7 +49,7 @@ New sessions (different `session_id`) always show "First prompt of session" rega
 /plugin marketplace add davidmoneil/claude-prompt-timer
 
 # Install the plugin
-/plugin install prompt-timer@davidmoneil-claude-prompt-timer
+/plugin install prompt-timer@claude-prompt-timer
 ```
 
 ### Option 2: Plugin directory (local/development)
